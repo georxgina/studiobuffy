@@ -19,19 +19,25 @@
     height: 100%;
   }
 
-  /* DESKTOP */
+  /* DESKTOP — EXACTLY HOW YOU HAD IT */
   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     color: #fafafa;
+
     background-image: url('buffylarge.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
 
+  .coming-soon-wrapper {
     text-align: center;
-
-    /* This puts text roughly centered for desktop */
-    padding-top: 42vh;   /* adjust if needed */
+    padding: 0 20px;
   }
 
   .coming-soon-wrapper p {
@@ -40,23 +46,23 @@
     letter-spacing: 2px;
   }
 
-  /* MOBILE */
+  /* MOBILE OVERRIDE */
   @media (max-width: 768px) {
 
+    /* turn OFF flex on mobile so text can move */
     body {
+      display: block;
       background-image: url('buffymobile.png');
-
-      /* Put text lower on mobile since your mobile BG is tall (1500x2000) */
-      padding-top: 62vh;
+      padding-top: 58vh;        /* ★ tuned for 1500x2000 image */
+      text-align: center;
     }
 
-    .coming-soon-wrapper p {
-      font-size: 14px;
-      letter-spacing: 2px;
+    .coming-soon-wrapper {
+      width: 100%;
+      transform: translateY(0); /* reset any transforms */
     }
   }
 </style>
-
 
 
 </head>
