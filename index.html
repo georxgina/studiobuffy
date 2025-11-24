@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Florist Studio Sydney" />
   <meta name="theme-color" content="#F2F2F2" />
-    <title>Studio Buffy</title>
+  <title>Studio Buffy</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 
   <style>
+    /* ------ BASIC RESET ------ */
     html, body {
       margin: 0;
       padding: 0;
@@ -20,17 +21,29 @@
       overflow: hidden;
       font-family: "Geist Mono", monospace;
       font-size: 16px;
+      color: #fafafa;
 
-      /* ---- BACKGROUND IMAGE ---- */
-      background: url("buffylarge.png") no-repeat center center fixed;
-      background-size: cover;
-
-      color: #FaFaFa;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
+    /* ------ DESKTOP BACKGROUND ------ */
+    body {
+      background-image: url('buffylarge.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* ------ MOBILE BACKGROUND ------ */
+    @media (max-width: 768px) {
+      body {
+        background-image: url('buffymobile.png');
+      }
+    }
+
+    /* ------ TEXT WRAPPER ------ */
     .coming-soon-wrapper {
       text-align: center;
       padding: 0 20px;
@@ -44,6 +57,12 @@
   </style>
 
 </head>
+
 <body>
+  <!-- Add your text here -->
+  <div class="coming-soon-wrapper">
+    <p>Coming Soon</p>
+  </div>
 </body>
+
 </html>
