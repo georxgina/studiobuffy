@@ -11,18 +11,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-
 <style>
-
-  /* ------ RESET ------ */
+  /* RESET */
   html, body {
     margin: 0;
     padding: 0;
     height: 100%;
   }
 
-  /* ------ DEFAULT / DESKTOP LAYOUT ------ */
+  /* DESKTOP — EXACTLY HOW YOU HAD IT */
   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #fafafa;
@@ -31,38 +33,37 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    /* This lets the text move */
-    display: block;
-    text-align: center;
-
-    /* Position text lower on desktop */
-    padding-top: 35vh;
   }
 
-  /* ------ TEXT WRAPPER ------ */
+  .coming-soon-wrapper {
+    text-align: center;
+    padding: 0 20px;
+  }
+
   .coming-soon-wrapper p {
     margin: 0;
     font-size: 16px;
     letter-spacing: 2px;
-    line-height: 1.6;
   }
 
-  /* ------ MOBILE LAYOUT ------ */
+  /* MOBILE OVERRIDE */
   @media (max-width: 768px) {
 
+    /* turn OFF flex on mobile so text can move */
     body {
+      display: block;
       background-image: url('buffymobile.png');
-      padding-top: 45vh; /* move text lower for mobile */
+      padding-top: 58vh;        /* ★ tuned for 1500x2000 image */
+      text-align: center;
     }
 
-    .coming-soon-wrapper p {
-      font-size: 14px;
-      letter-spacing: 2px;
+    .coming-soon-wrapper {
+      width: 100%;
+      transform: translateY(0); /* reset any transforms */
     }
   }
-
 </style>
+
 
 </head>
 
