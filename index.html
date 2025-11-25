@@ -4,76 +4,109 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Florist Studio Sydney" />
-  <meta name="theme-color" content="#F2F2F2" />
-  <title>Studio Buffy</title>
 
+  <!-- SEO -->
+  <title>Studio Buffy | Sydney Florist Studio</title>
+  <meta name="description" content="Studio Buffy is a boutique florist studio based in Sydney, specialising in bespoke floral arrangements, bouquets and curated blooms. Blooming soon." />
+  <link rel="canonical" href="https://www.studiobuffy.com.au/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- OPENGRAPH / SOCIAL -->
+  <meta property="og:title" content="Studio Buffy | Sydney Florist Studio" />
+  <meta property="og:description" content="Boutique florist studio in Sydney. Blooming soon." />
+  <meta property="og:image" content="https://www.studiobuffy.com.au/og-image.jpg" />
+  <meta property="og:url" content="https://www.studiobuffy.com.au/" />
+  <meta property="og:type" content="website" />
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Studio Buffy" />
+  <meta name="twitter:description" content="Boutique florist studio in Sydney. Blooming soon." />
+  <meta name="twitter:image" content="https://www.studiobuffy.com.au/og-image.jpg" />
+
+  <!-- BRANDING -->
+  <meta name="theme-color" content="#F2F2F2" />
+
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-<style>
-  /* RESET */
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
 
-  /* DESKTOP — EXACTLY HOW YOU HAD IT */
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #fafafa;
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
-    background-image: url('buffylarge-v3.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .coming-soon-wrapper {
-    text-align: center;
-    padding: 0 20px;
-  }
-
-  .coming-soon-wrapper p {
-    margin: 0;
-    font-size: 16px;
-    letter-spacing: 2px;
-  }
-
-  /* MOBILE OVERRIDE */
-  @media (max-width: 768px) {
-
-    /* turn OFF flex on mobile so text can move */
     body {
-      display: block;
-      background-image: url('buffymobile.png');
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: #fafafa;
+
+      background-image: url('buffylarge-v3.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .coming-soon-wrapper {
-      width: 100%;
-      padding-top: 29vh;        /* ★ tuned for 1500x2000 image */
-      transform: translateY(0); /* reset any transforms */
+      text-align: center;
+      padding: 0 20px;
     }
-    .coming-soon-wrapper p {
-    margin: 0;
-    font-size: 12px;
-    letter-spacing: 2px;
-  }
-  }
-</style>
 
+    .coming-soon-wrapper p {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 2px;
+      opacity: 70%;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        display: block;
+        background-image: url('buffymobile.png');
+        text-align: center;
+      }
+
+      .coming-soon-wrapper {
+        width: 100%;
+        padding-top: 29vh;
+      }
+
+      .coming-soon-wrapper p {
+        font-size: 12px;
+      }
+    }
+  </style>
+
+  <!-- STRUCTURED DATA (Google SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Studio Buffy",
+    "description": "Florist studio based in Sydney.",
+    "url": "https://www.studiobuffy.com.au/",
+    "image": "https://www.studiobuffy.com.au/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "addressCountry": "Australia"
+    }
+  }
+  </script>
 
 </head>
 
 <body>
   <div class="coming-soon-wrapper">
+    <h1 style="opacity:0; height:0; overflow:hidden;">Studio Buffy - Sydney Florist Studio</h1>
     <p>BLOOMING SOON</p>
   </div>
 </body>
